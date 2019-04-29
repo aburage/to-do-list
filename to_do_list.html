@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <style>
+        body{
+            margin: 0;
+            min-width: 250px;
+        }
+        ul {
+            margin: 0;
+            padding: 20px 0px;
+        }
+        ul li{
+            background-color: #eee;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        ul li.checked{
+            background-color: #999;
+            text-decoration: line-through;
+        }
+        ul li:hover{
+            background-color: azure;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        .form{
+            font-size: 15px;
+            padding: 10px;
+        }
+        .addBtn{
+            padding: 10px;
+            background-color: #DDD;
+        }
+    </style>
+    </head>
+    
+    <body>
+    <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" class="form" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    <ul id="myUL">
+    <li>aaa</li>
+    <li class="checked">bbb</li>
+    <li>ccc</li>
+    <li>ddd</li>
+    <li class="checked">eee</li>
+    <li>fff</li>
+    </ul>
+    </body>
+    
+    <script>
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+            if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+            }
+        }, false);
+        
+    </script>
+</html>
