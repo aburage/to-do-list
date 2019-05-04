@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    background-color: #14283C;
+    margin: 0;
+    min-width: 250px;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+h1{
+    color: #cff;
+    margin: 20px;
+}
+
+.form{
+    margin: 5px 10px 5px 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+ul li {
+    margin: 5px 30px;
+    background-color: #cff;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+ul li.checked {
+    background-color: #eee;
+    text-decoration: line-through;
+}
+
+ul li:hover {
+    background-color: #bdf;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+
+.addBtn {
+    padding: 13px;
+    background-color: #eee;
+    cursor: pointer;
+}
