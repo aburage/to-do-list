@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: #14283C;
+    background-color: #19244a;
     margin: 0;
     min-width: 250px;
 }
@@ -9,11 +9,12 @@ body {
 input {
     font-size: 15px;
     padding: 10px;
+    margin: 0px 10px 0px 30px;
 }
 
 
 h1{
-    color: #cff;
+    color: #57bda8;
     margin: 20px;
 }
 
@@ -29,24 +30,23 @@ ul {
 
 ul li {
     margin: 5px 30px;
-    background-color: #cff;
+    background-color: #57bda8;
     list-style-type: none;
     font-size: 20px;
 }
 
 ul li.checked {
-    background-color: #eee;
+    background-color: #f6f9e4;
     text-decoration: line-through;
 }
 
 ul li:hover {
-    background-color: #bdf;
+    background-color: #e5e647;
 }
 
 h2 {
     font-size: 22px;
 }
-
 
 .addBtn {
     padding: 13px;
