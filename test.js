@@ -1,4 +1,4 @@
-const list = document.querySelector('ul');
+const list = document.querySelector("ul,#myList");
 list.addEventListener('click', function (ev) {
     if (ev.target.tagName === 'LI') {
         ev.target.classList.toggle('checked');
@@ -6,11 +6,11 @@ list.addEventListener('click', function (ev) {
 }, false);
 
 function newElement() {
-    const li = document.createElement("li");
+    const li = document.createElement("li,#myList");
     const inputValue = document.getElementById("myInput").value;
     const text = document.createTextNode(inputValue);
     li.appendChild(text);
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myList").appendChild(li);
     document.getElementById("myInput").value = "";
     const span = document.createElement("SPAN");
     //span.appendChild(text);
