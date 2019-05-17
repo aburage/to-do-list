@@ -29,7 +29,8 @@ ul {
 }
 
 ul li {
-    margin: 5px 30px;
+    margin: 5px 30px 0px 30px;
+    padding: 0px 0px 5px 15px;
     background-color: #57bda8;
     list-style-type: none;
     font-size: 20px;
@@ -37,6 +38,7 @@ ul li {
 
 ul li.checked {
     background-color: #f6f9e4;
+    color: #888;
     text-decoration: line-through;
 }
 
@@ -53,3 +55,21 @@ h2 {
     background-color: #eee;
     cursor: pointer;
 }
+
+.closeButton {
+    display: inline-block;
+    float: right;
+    background-color: #ABBCB9;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 0 0 15px;
+    width: 25px;
+    height: 30px;
+    
+}
+
+.closeButton:hover {
+    background-color: #e5e5b7;
+    color: #555;
+}
+

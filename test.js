@@ -6,22 +6,18 @@ list.addEventListener('click', function (ev) {
 }, false);
 
 function newElement() {
-    const li = document.createElement("li,#myList");
+    const newLi = document.createElement("li");
     const inputValue = document.getElementById("myInput").value;
     const text = document.createTextNode(inputValue);
-    li.appendChild(text);
-    document.getElementById("myList").appendChild(li);
-    document.getElementById("myInput").value = "";
-    const span = document.createElement("SPAN");
-    //span.appendChild(text);
-    const txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
-            const div = this.parentElement;
-            div.style.display = "none";
-        }
+    if (inputValue != '') {
+        newLi.appendChild(text);
+        document.getElementById("myList").appendChild(newLi);
+        document.getElementById("myInput").value = "";
+
+        const span = document.createElement("SPAN");
+        span.className = "closeButton";
+        const txt = document.createTextNode("\u00D7");
+        span.appendChild(txt);
+        newLi.appendChild(span);
     }
 }
