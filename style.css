@@ -16,38 +16,12 @@ input {
 h1{
     color: #57bda8;
     margin: 20px;
+    text-align: center
 }
 
 .form{
     margin: 5px 10px 5px 30px;
-}
-
-ul {
-    margin: 0;
-    padding: 20px 0px;
-    cursor: pointer;
-}
-
-ul li {
-    margin: 5px 30px 0px 30px;
-    padding: 0px 0px 5px 15px;
-    background-color: #57bda8;
-    list-style-type: none;
-    font-size: 20px;
-}
-
-ul li.checked {
-    background-color: #f6f9e4;
-    color: #888;
-    text-decoration: line-through;
-}
-
-ul li:hover {
-    background-color: #e5e647;
-}
-
-h2 {
-    font-size: 22px;
+    margin: 0 auto;
 }
 
 .addBtn {
@@ -56,20 +30,52 @@ h2 {
     cursor: pointer;
 }
 
-.closeButton {
+ul {
+    padding: 20px 0px;
+    cursor: pointer;
+    width: 600px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li p {
     display: inline-block;
-    float: right;
+    width: 450px;
+    height: 30px;
+    background-color: #57bda8;
+    margin: 0 0 0 30px;
+    padding: 5px 0px 5px 15px;
+    font-size: 20px;
+}
+
+li p:hover{
+    background-color: #e5e647;
+    transition: 0.1s ease-out;
+}
+
+li p.checked{
+    text-decoration: line-through;
+    background-color: #f6f9e4;
+    color: #888;
+}
+
+li span {
+    display: inline-block;
     background-color: #ABBCB9;
     color: #fff;
     font-size: 16px;
     padding: 5px 0 0 15px;
+    margin: 0 0 0 10px;
     width: 25px;
-    height: 30px;
+    height: 33px;
     
 }
 
-.closeButton:hover {
+li span:hover {
     background-color: #e5e5b7;
     color: #555;
+    transition: 0.1s ease-out;
 }
 
