@@ -1,10 +1,10 @@
 //  check todo
-const list = document.getElementById('todo');
-list.addEventListener('click', function(event) {
-    if (event.tagName === 'P') {
-        event.classList.toggle('checked');
-    }
-}, false);
+const list = document.getElementsByClassName('name');
+for(let i = 0; i < list.length; i++) {
+     list[i].addEventListener('click', function (event) {
+         event.target.classList.toggle('checked');
+     }, false);
+ }
 
 //  add todo
 function newElement() {
@@ -14,9 +14,9 @@ function newElement() {
 
     if (inputValue != '') {
         document.getElementById("myList").appendChild(newLi);
-        newLi.id = "todo";
+        newLi.className = "todo";
         const newP = document.createElement("p");
-        newP.id = "name";
+        newP.className = "name";
         const span = document.createElement("SPAN");
         span.className = "closeButton";
         newLi.appendChild(newP);
@@ -30,11 +30,11 @@ function newElement() {
 }
 
 //  delete todo
-const close = document.getElementById('todo');
-for (i = 0; i < close.length; i++) {
+const close = document.querySelectorAll('ul li.todo span.closeButton');
+const lists = document.querySelectorAll('ul li.todo');
+for (let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-        const lists = document.getElementById('todo');
-        const del = lists[i];
-        lists.parentNode.removeChild(lists[i]);
+        console.log(i)
+        close[i].parentNode.remove(lists[i]);
     }
 }
