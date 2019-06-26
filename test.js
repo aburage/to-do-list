@@ -1,5 +1,5 @@
 //  add todo
-function createNewElement() {
+function listElement() {
     const newLi = document.createElement("li");
     const inputValue = document.getElementById("myInput").value;
     const text = document.createTextNode(inputValue);
@@ -28,9 +28,9 @@ function createNewElement() {
 function checkTodo() {
     const list = document.getElementsByClassName('name');
     for (let i = 0; i < list.length; i++) {
-        list[i].addEventListener('click', function (event) {
+        list[i].onclick = function() {
             event.target.classList.toggle('checked');
-        }, false);
+        }
     }
 }
 checkTodo();
