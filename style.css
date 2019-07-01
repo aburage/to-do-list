@@ -30,6 +30,27 @@ h1{
     cursor: pointer;
 }
 
+.changeBtnR {
+    padding: 13px;
+    margin: 0px 0px 0px 50px;
+    background-color: #e89;
+    cursor: pointer;
+}
+
+.changeBtnG {
+    padding: 13px;
+    margin: 0px 0px 0px 20px;
+    background-color: #8e9;
+    cursor: pointer;
+}
+
+.changeBtnB {
+    padding: 13px;
+    margin: 0px 0px 0px 20px;
+    background-color: #89e;
+    cursor: pointer;
+}
+
 ul {
     padding: 20px 0px;
     cursor: pointer;

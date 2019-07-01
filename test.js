@@ -47,3 +47,24 @@ function deleteTodo() {
 }
 deleteTodo();
 
+//  change color
+function changeColorToR() {
+    const elm = document.getElementsByClassName("name");
+    for (let i = 0; i < elm.length; i++) {
+        elm[i].style.backgroundColor = "#e89";
+    }
+}
+
+function changeColorToG() {
+    const elm = document.getElementsByClassName("name");
+    for (let i = 0; i < elm.length; i++) {
+        elm[i].style.backgroundColor = "#8e9";
+    }
+}
+
+function changeColorToB() {
+    const elm = document.getElementsByClassName("name");
+    for (let i = 0; i < elm.length; i++) {
+        elm[i].style.backgroundColor = "#89e";
+    }
+}
