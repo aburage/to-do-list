@@ -15,8 +15,7 @@ input {
 
 h1{
     color: #57bda8;
-    margin: 20px;
-    text-align: center
+    margin: 30px;
 }
 
 .form{
@@ -35,6 +34,7 @@ h1{
     margin: 0px 0px 0px 50px;
     background-color: #e89;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .changeBtnG {
@@ -42,6 +42,7 @@ h1{
     margin: 0px 0px 0px 20px;
     background-color: #8e9;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .changeBtnB {
@@ -49,6 +50,7 @@ h1{
     margin: 0px 0px 0px 20px;
     background-color: #89e;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 ul {
@@ -79,7 +81,7 @@ li p:hover{
 li p.checked{
     text-decoration: line-through;
     background-color: #f6f9e4;
-    color: #888;
+    color: #AAA;
 }
 
 li span {
@@ -98,5 +100,71 @@ li span:hover {
     background-color: #e5e5b7;
     color: #555;
     transition: 0.1s ease-out;
+}
+
+/* Color Mode */
+/* red mode */
+.redMode .name{
+    background-color: #A35;
+}
+
+.redMode .closeButton{
+    background-color: #ebc;
+}
+
+.redMode .name:hover{
+    background-color: #623;
+}
+
+.redMode .name.checked{
+     background-color: #556;
+}
+
+.redMode .closeButton:hover{
+    background-color: #edd;
+}
+
+/* green mode */
+
+.greenMode .name{
+    background-color: #598;
+}
+
+.greenMode .closeButton{
+    background-color: #bdb;
+}
+
+.greenMode .name:hover{
+    background-color: #265;
+}
+
+.greenMode .name.checked{
+     background-color: #556;
+}
+
+.greenMode .closeButton:hover{
+    background-color: #ded;
+}
+
+/* blue mode */
+
+.blueMode .name{
+    background-color: #56A;
+}
+
+.blueMode .closeButton{
+    background-color: #bcd;
+}
+
+.blueMode .name:hover{
+    background-color: #347;
+}
+
+.blueMode .name.checked{
+     background-color: #556;
+}
+
+.blueMode .closeButton:hover{
+    background-color: #cde;
 }
 
